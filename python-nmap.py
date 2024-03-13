@@ -18,6 +18,6 @@ scaner.scan(ip_escaneo, puerto, arguments=f' -sV {protocolo}')
 
 #Imprimo los resultados
 
-print("Escaneo completado.")
+print("¡Escaneo completado! :D")
 print(f"Estado del puerto {puerto}:", scaner[ip_escaneo].state())
 print(f"Protocolos escaneados {protocolo}:", scaner[ip_escaneo].all_protocols())
