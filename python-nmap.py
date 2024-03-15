@@ -11,10 +11,11 @@ scaner = nmap.PortScanner()
 ip_escaneo = input("Introduce la IP:")
 puerto = input("Introduce el puerto:")
 protocolo = input("Introduce el protocolo:")
+argumento = input("Introduce los argumentos a aplicar en el escaneo:")
 
 #Con este comando, lanzamos el escaneo sobre el input ya sea fijo o variable
 
-scaner.scan(ip_escaneo, puerto, arguments=f' -sV {protocolo}')
+scaner.scan(ip_escaneo, puerto, arguments=f' {argumento} {protocolo}')
 
 #Imprimo los resultados
 
